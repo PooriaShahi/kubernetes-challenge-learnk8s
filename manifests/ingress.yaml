@@ -4,8 +4,7 @@ metadata:
   name: node-ingress
 spec:
   rules:
-  - host: example.com
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix

@@ -23,6 +23,7 @@ spec:
       containers:
       - image: learnk8s-challenge:latest
         name: node-app
+        imagePullPolicy: IfNotPresent
         env:
         - name: NAME
           valueFrom:
@@ -34,5 +35,5 @@ spec:
         resources:
           requests:
             cpu: 20m
-            memory: 55m
+            memory: 50m
       restartPolicy: Always
